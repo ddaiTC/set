@@ -8,13 +8,13 @@
 # defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 
 export ZSH="/Users/derekdai/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
+export PATH="$PATH:$HOME/.rvm/bin"
+
 ZSH_THEME=""
 CASE_SENSITIVE="false"
 HYPHEN_INSENSITIVE="true"
 plugins=(git)
-source $ZSH/oh-my-zsh.sh
-export PATH="$PATH:$HOME/.rvm/bin"
-
 
 #_______GIT COLOR_________
 # source ~/git-completion.bash
