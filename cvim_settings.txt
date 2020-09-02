@@ -22,7 +22,7 @@ map A :tabattach (autocomplete)
 map gr reloadAllTabs
 map mr reloadAllTabs
 map q goToInput
-map i :open https://admin-derek.kaiyo-staging.com/|<CR>
+map i :open https://something.com/|<CR>
 map z lastUsedTab
 map gs openLastLinkInTab
 map gd :duplicate
