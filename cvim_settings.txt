@@ -1,0 +1,29 @@
+let completionengines = ['google']
+let qmark g = ["https://mail.google.com/mail/u/0/"]
+let qmark h = ["https://mail.google.com/mail/u/1/"]
+let qmark k = ["https://keep.google.com/u/0/"]
+set smoothscroll
+let scrollstep = 140
+let scrollduration = 300
+map j scrollPageDown
+map k scrollPageUp
+map J scrollFullPageDown
+map K scrollFullPageUp
+map h previousTab
+map l nextTab
+map H goBack
+map L goForward
+map r reloadTabUncached
+map O :tabattach (autocomplete)
+map T :buffer<Space>
+map B createBookmark
+map Q :buffer<Space>
+map A :tabattach (autocomplete)
+map gr reloadAllTabs
+map mr reloadAllTabs
+map q goToInput
+map i :open https://admin-derek.kaiyo-staging.com/|<CR>
+map z lastUsedTab
+map gs openLastLinkInTab
+map gd :duplicate
+map , :settings
