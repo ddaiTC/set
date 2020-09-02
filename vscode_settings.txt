@@ -1,0 +1,263 @@
+{ // main
+    "window.zoomLevel": 1,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "explorer.confirmDelete": false,
+    "editor.folding": false,
+    "workbench.editor.focusRecentEditorAfterClose": false,
+    "workbench.statusBar.visible": true,
+    "editor.glyphMargin": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.fullScreen": false,
+    "window.restoreWindows": "all",
+    "files.hotExit": "onExit",
+    "editor.renderWhitespace": "none",
+    // styling
+    "editor.tokenColorCustomizations": {
+        "comments": "#797979"
+    },
+    "workbench.colorCustomizations": {
+        "scrollbarSlider.background": "#4b4b4b5d",
+    },
+    "editor.fontFamily": "Dank Mono",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": false,
+    "editor.fontSize": 16,
+    // lint
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "/Users/d/homebrew/bin/flake8",
+    "python.linting.flake8Args": [
+        "--ignore=E501, W503, E20",
+        "--max-line-length=80",
+        "--select= C,E,F,W,B,B950",
+        "--max-complexity= 23",
+        "--exclude= alembic"
+
+    ],
+    "python.linting.lintOnSave": true,
+    "python.formatting.provider": "black",
+
+    // "python.formatting.blackPath": "/Users/d/homebrew/bin/black",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[jsx]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[css]": {
+        "editor.formatOnSave": true
+    },
+    "[less]": {
+        "editor.formatOnSave": true
+    },
+    "[python]": {
+         "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": false,
+        "editor.formatOnSaveTimeout": 1000,
+    },
+    // "ruby.rubocop.onSave": true,
+    // "ruby.format": "rubocop",
+    "[ruby]": {
+        "editor.tabSize": 2,
+        // "editor.formatOnSave": true,
+    },
+    "ruby.format": "standard",
+
+    // "ruby.lint": {
+    //     "rubocop": {
+    //         "useBundler": "true"
+    //     }
+    // },
+    "[json]": {
+        "editor.formatOnSave": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false,
+    },
+    // keeb
+    "vim.leader": "<Space>",
+    "atomKeymap.promptV3Features": true,
+    "vim.useSystemClipboard": true,
+    "vim.replaceWithRegister": true,
+    "vim.hlsearch": true,
+    "vim.easymotion": true,
+    "vim.easymotionMarkerYOffset": -10,
+    "vim.easymotionMarkerHeight": 25,
+    "vim.easymotionMarkerFontSize": "20",
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // only let x be deleter that replaces reg
+        {
+            "before": [
+                "x"
+            ],
+            "after": [
+                "x"
+            ]
+        },
+        {
+            "before": [
+                "c"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "c"
+            ]
+        },
+        {
+            "before": [
+                "d"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d"
+            ]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "5",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "5",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "l"
+            ],
+            "after": [
+                "<C-w>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "h"
+            ],
+            "after": [
+                "<C-w>",
+                "h"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "k"
+            ],
+            "commands": [
+                ":tabnext"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "j"
+            ],
+            "commands": [
+                ":tabprev"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.quickOpen",
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.quickOpen",
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "?"
+            ],
+            "commands": [
+                "workbench.action.showCommands",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "%"
+            ],
+            "commands": [
+                {
+                    "command": "editor.emmet.action.matchTag"
+                }
+            ]
+        },
+        {
+                "before": ["d"],
+                "after": ["\"", "_", "d"]
+        },
+        {
+                "before": ["c"],
+                "after": ["\"", "_", "c"]
+        },
+        {
+                "before": ["x"],
+                "after": ["\"", "_", "x"]
+        },
+        {
+            "before": ["Y"],
+            "after": ["^", "y","g","_"]
+        },
+        {
+            "before": ["0"],
+            "after": ["^",]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c"
+            ],
+            "commands": [
+                "editor.action.commentLine",
+            ],
+        },
+    ],
+    "html.mirrorCursorOnMatchingTag": false,
+    "editor.autoClosingQuotes": "beforeWhitespace",
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Horizon Italic",
+    "editor.lineNumbers": "relative",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "ruby.rubocop.useBundler": true,
+    "ruby.intellisense": "rubyLocate",
+    "editor.definitionLinkOpensInPeek": true,
+}
+
